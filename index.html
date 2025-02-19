@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio WebPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./selfimage.jpg">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">My Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certificate">Certificate</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection" >
+            <div class="leftSection">
+                Hey! I am <span class="purple"><br>Dnyaneshwari</span>
+                <div>and I'm a passionate</div>
+                <span id="element" class="purple"></span>
+                <br>
+                <a href="First Resume 1.pdf" download><button class="btn btn-outline-primary" id="btn-resume" >Get Resume</button></a><br>
+
+                <div class="ref">
+                    <a href="mailto:dnyaneshwarigr91203@gmai.com"><i class="fa-solid fa-envelope fa-lg "></i></a>
+                    <a href="https://www.linkedin.com/in/dnyaneshwari-rode/"><i class="fa-brands fa-linkedin fa-lg"></i></a> 
+                    <a href="https://github.com/DnyaneshwariRode/"><i class="fa-brands fa-github fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="./selfimage.jpg">
+            </div>
+        </section>
+
+        <hr>
+        
+        <section class="skillSection" id="skills">
+            <h1>My Technical Skills</h1>
+            <div class="info"><h4>HTML</h4><span class="bar"><span class="html"></span></span></div>
+            <div class="info"><h4>CSS</h4><span class="bar"><span class="css"></span></span></div>
+            <div class="info"><h4>JavaScript</h4><span class="bar"><span class="javascript"></span></span></div>
+            <div class="info"><h4>Python</h4><span class="bar"><span class="java"></span></span></div>
+            <div class="info"><h4>Java</h4><span class="bar"><span class="cpp"></span></span></div>
+        </section>
+
+        <hr>
+        <section class="projectSection" id="projects">
+            <h1>Projects</h1>
+            <div class="horizontal">
+                <div class="vertical">
+                    <div class="vertical-title">Plant health prediction</div>
+                    <a href="https://github.com/DnyaneshwariRode/Edunet_Foundation_Project" target="_blank">
+                    <div class="vertical-desc">This dataset contains 1,200 records of plant health monitoring using sensor data. It includes environmental factors(temperature, humidity, light), soil conditions (moisture, pH, nutrients), and plant-specific parameters (chlorophyll, electrochemical signals). The target variable, Plant_Health_Status, categorizes plant conditions like "High Stress." It is suitable for machine learning models to predict plant health based on real-time sensor inputs, aiding in precision agriculture.</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section class="certificateSection" id="certificate">
+            <h1>Certificates</h1>
+            <div class="horizontal1">
+                <div class="vertically">
+                    <img class="photos" src="Programming In Java.pdf" alt="NPTEL Programming in Java">
+                    <a href="Programming In Java.pdf" download><button class="btn btn-outline-primary" id="btn-resume" >See Certificate</button></a><br>
+                    <img class="photos" src="Python for Data Science.pdf" alt="NPTEL Python for Data Science">
+                    <a href="Python for Data Science.pdf" download><button class="btn btn-outline-primary" id="btn-resume" >See Certificate</button></a><br>
+                    <img class="photos" src="Getting_Started_with_Enterprise_Data_Science_Badge20240415-38-9bkyx0.pdf" alt=" IBM Certification">
+                    <a href="Getting_Started_with_Enterprise_Data_Science_Badge20240415-38-9bkyx0.pdf" download><button class="btn btn-outline-primary" id="btn-resume" >See Certificate</button></a><br>
+                    <img class="photos" src="Dnyaneshwari Certificate (1).pdf" alt=" Techtonics Latex Certification">
+                    <a href="Dnyaneshwari Certificate (1).pdf" download><button class="btn btn-outline-primary" id="btn-resume" >See Certificate</button></a><br>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer" id="contact">
+            <div class="row-1">Get In Touch</div>
+            <div class="row-2">Let's Collab & do a Project!</div>
+            <div class="row-3">Contact me</div>
+            <div class="row-4">
+                <a href="mailto:dnyaneshwarigr91203@gmail.com"><i class="fa-solid fa-envelope fa-lg "></i></a>
+                <a href="https://www.linkedin.com/in/dnyaneshwari-rode/"><i class="fa-brands fa-linkedin fa-lg"></i></a> 
+                <a href="https://github.com/DnyaneshwariRode"><i class="fa-brands fa-github fa-lg"></i></a>
+            </div>
+            <div class="row-5">dnyaneshwariportfolio.netlify.app | Copyright &copy; 2025 All Rights Reserved</div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Front End Developer'],
+          typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
